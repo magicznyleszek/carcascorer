@@ -1,0 +1,18 @@
+# description
+name: "Carcascorer"
+description: "A simple app for counting points in Carcassonne"
+keywords: "carcassone, board game, score"
+author: "Leszek Pietrzak"
+
+# address settings
+url: "http://carcascorer.smutnyleszek.com"
+
+# site configuration
+safe: true
+quiet: false
+future: true
+encoding: utf-8
+markdown: kramdown
+kramdown:
+    auto_ids: false
+timezone: Europe/Warsaw

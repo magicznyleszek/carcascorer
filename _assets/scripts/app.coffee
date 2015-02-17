@@ -1,0 +1,1 @@
+carcascorerApp = angular.module('carcascorerApp', [])
