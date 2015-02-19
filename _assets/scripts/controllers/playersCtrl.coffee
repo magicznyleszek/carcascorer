@@ -1,4 +1,4 @@
-angular.module('carcascorerApp').controller('PlayersCtrl', ['config', (config) ->
+angular.module('carcascorerApp').controller('PlayersCtrl', ['colorsConts', (colorsConts) ->
     vm = this
 
     test = ->
