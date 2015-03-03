@@ -7,9 +7,12 @@ Things to have:
     - clear all data
     - clear all points
 2. managing:
-    - add (name, color)
-    - edit (name, color)
-    - remove
+    - add by name and color
+        - propose unused color if it exists
+    - edit
+        - change name
+        - change color
+        - remove with confirm
     - keep a list of players
         - name
         - color
