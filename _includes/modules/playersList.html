@@ -1,19 +1,27 @@
 <section ng-controller="PlayersCtrl as players">
 
-    <h2>List:</h2>
+    <section>
 
-    <ul>
-        <li ng-repeat="human in players.humans" ng-bind="human.name"></li>
-    </ul>
+        <h2>List:</h2>
 
-    <h2>Add:</h2>
+        <ul>
+            <li ng-repeat="human in players.humans" ng-bind="human.name"></li>
+        </ul>
 
-    <input type="text" ng-model="players.fetus.name"></input>
+    </section>
 
-    <ul>
-        <li ng-repeat="color in players.colors" ng-bind="color"></li>
-    </ul>
+    <section>
 
-    <button am-button ng-click="players.create(players.fetus)">add</button>
+        <h2>Add:</h2>
+
+        <input type="text" ng-model="players.fetus.name"></input>
+
+        <ul>
+            <li ng-repeat="color in players.colors" ng-bind="color"></li>
+        </ul>
+
+        <button am-button ng-click="players.create(players.fetus)">add</button>
+
+    </section>
 
 </section>
