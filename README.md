@@ -2,21 +2,28 @@
 
 Things to have:
 
-1. Add player with name and color
-2. Settings:
-    - Expansions on/off
-    - Clear all data
-    - Clear all points
-3. Add score to player:
-    - Add points for something (number input, ++, --)
-    - Add points for closed road with length (number input, ++, --, times)
-    - Add points for closed city with size (number input, ++, --, times)
-4. Show current score:
-    - List of players
-        - actions menu
-        - current points
-        - longest road (number of roads)
-        - largest city (number of cities)
+1. configuring:
+    - expansions on/off
+    - clear all data
+    - clear all points
+2. managing:
+    - add (name, color)
+    - edit (name, color)
+    - remove
+    - keep a list of players
+        - name
+        - color
+        - points
+        - roads
+            - longest
+            - amount closed
+        - cities
+            - largest
+            - amount closed
+3. scoring:
+    - add points (number input, ++, --)
+    - note closed road (length, add points)
+    - note closed city (length, add points)
 
 Todo:
 
