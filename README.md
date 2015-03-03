@@ -8,7 +8,7 @@ Things to have:
     - clear all points
 2. managing:
     - add by name and color
-        - propose unused color if it exists
+        - propose unused color if any left
     - edit
         - change name
         - change color

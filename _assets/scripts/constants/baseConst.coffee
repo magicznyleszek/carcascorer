@@ -1,4 +1,4 @@
-angular.module('carcascorerApp').constant('colorsConst', do ->
+angular.module('carcascorerApp').constant('baseConst', do ->
 
     colors =
         black: 'hsl(0, 0%, 12%)'

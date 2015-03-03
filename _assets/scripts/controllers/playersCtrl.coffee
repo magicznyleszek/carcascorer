@@ -1,4 +1,4 @@
-angular.module('carcascorerApp').controller('PlayersCtrl', ['colorsConst', 'humansRepository', (colorsConst, humansRepository) ->
+angular.module('carcascorerApp').controller('PlayersCtrl', ['baseConst', 'humansRepository', (baseConst, humansRepository) ->
 
     vm = this
 
@@ -11,6 +11,7 @@ angular.module('carcascorerApp').controller('PlayersCtrl', ['colorsConst', 'huma
 
     vm.test = test
     vm.fetus = fetus
+    vm.colors = baseConst.colors
     vm.humans = humansRepository.humans
     vm.create = humansRepository.create
 

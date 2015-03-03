@@ -1,5 +1,5 @@
 (function() {
-  angular.module('carcascorerApp').constant('colorsConst', (function() {
+  angular.module('carcascorerApp').constant('baseConst', (function() {
     var colors;
     colors = {
       black: 'hsl(0, 0%, 12%)',

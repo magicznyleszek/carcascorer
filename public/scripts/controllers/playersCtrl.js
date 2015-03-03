@@ -1,6 +1,6 @@
 (function() {
   angular.module('carcascorerApp').controller('PlayersCtrl', [
-    'colorsConst', 'humansRepository', function(colorsConst, humansRepository) {
+    'baseConst', 'humansRepository', function(baseConst, humansRepository) {
       var fetus, test, vm;
       vm = this;
       fetus = {
@@ -12,6 +12,7 @@
       };
       vm.test = test;
       vm.fetus = fetus;
+      vm.colors = baseConst.colors;
       vm.humans = humansRepository.humans;
       vm.create = humansRepository.create;
       return this;
