@@ -1,31 +1,31 @@
 (function() {
   angular.module('carcascorerApp').service('humansRepository', [
     'Human', function(Human) {
-      var createHuman, destroyHuman, findHuman, init, self;
+      var create, destroy, find, init, self;
       self = this;
-      self.humans = [];
       init = function() {
         return console.log('dupa');
       };
-      createHuman = function(properties) {
+      create = function(properties) {
         var human;
         human = Human.create(properties);
-        self.humans.push(human);
-        return countHumans();
+        return self.humans.push(human);
       };
-      destroyHuman = function(id) {
+      destroy = function(id) {
         return _.remove(self.humans, function(human) {
           return human.id === id;
         });
       };
-      findHuman = function(id) {
+      find = function(id) {
         return _.find(self.humans, function(human) {
           return human.id === id;
         });
       };
       init();
-      self.findHuman = findHuman;
-      self.destroyHuman = destroyHuman;
+      self.humans = [];
+      self.create = create;
+      self.find = find;
+      self.destroy = destroy;
       return this;
     }
   ]);

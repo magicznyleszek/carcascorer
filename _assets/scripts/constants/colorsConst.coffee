@@ -1,13 +1,15 @@
-angular.module('galaxyApp').constant('colorsConst', do ->
+angular.module('carcascorerApp').constant('colorsConst', do ->
 
-    createColors = ->
-        labels = ['red', 'black', 'blue']
-        colors = []
-        for color in labels
-            colors.push({ label: color, taken: false })
-        return colors
+    colors =
+        black: 'hsl(0, 0%, 12%)'
+        blue: 'hsl(212, 80%, 52%)'
+        gray: 'hsl(60, 4%, 64%)'
+        green: 'hsl(120, 64%, 32%)'
+        red: 'hsl(4, 96%, 48%)'
+        yellow: 'hsl(0, 0%, 50%)'
 
     return {
-        colors: createColors()
+        colors: colors
     }
+
 )

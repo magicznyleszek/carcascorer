@@ -17,4 +17,5 @@ angular.module('carcascorerApp').factory('Human', [ ->
             human.color = properties.color
 
     return Human
+
 ])
